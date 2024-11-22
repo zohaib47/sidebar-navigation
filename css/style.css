@@ -48,8 +48,6 @@
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-04);
-    /* white-space: nowrap;
-    opacity: 1; */
     z-index: 100;
  }
 
@@ -144,6 +142,7 @@
  body.dark .sidebar header .toggle{
     color: var(--text-color);
  }
+
  .sidebar .menu{
     margin-top: 35px;
  }
@@ -265,24 +264,96 @@
     left: 24px;
  }
 
- .home{
+
+
+ /* =============Registration section============== */
+
+
+
+ .home, .dashboard{
     position: relative;
     left: 250px;
     height:100vh;
     width: calc(100% - 250px);
     background: var(--body-color);
     transition: var(--tran-05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
  
  }
 
  .home .text{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--text-color);
-    padding: 8px 40px;
+   font-size: 30px;
+   font-weight: 500;
+   color: var(--text-color);
+   padding: 8px 40px;
+}
+
+.sidebar.close ~ .home{
+   left: 88px;
+   width: calc(100% - 88px);
+}
+
+ .form-container {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   width: 400px;
+ }
+ 
+ h2 {
+   text-align: center;
+   margin-bottom: 18px;
+   color: #333;
  }
 
- .sidebar.close ~ .home{
-    left: 88px;
-    width: calc(100% - 88px);
+ form {
+   display: flex;
+   flex-direction: column;
  }
+ 
+ label {
+   margin-bottom: 2px;
+   font-weight: 500;
+   font-size: 14px;
+   color: #555;
+ }
+ 
+ .home form input {
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 13px;
+ }
+ 
+ button {
+   background-color:var(--primary-color);
+   color: #fff;
+   border: none;
+   padding: 12px;
+   border-radius: 4px;
+   font-size: 16px;
+   cursor: pointer;
+   transition:var(--tran-03);
+ }
+ 
+ button:hover {
+   background-color: #005ab3;
+ }
+ 
+ #result {
+   margin-top: 20px;
+   color: green;
+   text-align: center;
+   font-weight: bold;
+ }
+ 
+
+
+
+
+
+
