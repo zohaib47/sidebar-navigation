@@ -58,25 +58,3 @@
       
 
 
-
-    //   ===============Revenue section==========
-
-
-
-      const dashboard = document.getElementById("dashboard");
-const toggleDashboardBtn = document.getElementById("toggleDashboard");
-const toggleSidebarBtn = document.getElementById("toggleSidebar");
-
-// Toggle Dashboard Visibility
-toggleDashboardBtn.addEventListener("click", () => {
-  dashboard.classList.toggle("hidden");
-});
-
-// Toggle Sidebar Collapse
-toggleSidebarBtn.addEventListener("click", () => {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.classList.toggle("close");
-});
-
-
-       
